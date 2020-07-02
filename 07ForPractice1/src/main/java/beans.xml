@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="data" class="com.example.demo.Data"></bean>
+        
+        <bean id="internet" class="com.example.demo.Internet"></bean>
+        
+        <bean id="misscall" class="com.example.demo.Misscall"></bean>
+        
+        <bean id="hellotunes" class="com.example.demo.HelloTunes"></bean>
+        
+       	<bean id="airtel" class="com.example.demo.Airtel">
+       	<property name="ser" ref="data"></property>
+       	</bean>
+        
+</beans>
