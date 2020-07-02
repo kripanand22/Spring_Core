@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="queObject" class="com.example.demo.Queston">
+	<constructor-arg value="11" />
+	<constructor-arg value="What is java" />
+	<constructor-arg>
+	<map>
+	<entry key="Java is a Programming Language" value="kripa" />
+	<entry key="Java is a Platform" value="Utpal" />
+	<entry key="Java is an Island" value="Sanjay" />
+	</map>
+	</constructor-arg>
+	</bean>
+
+        
+</beans>
